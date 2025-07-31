@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QA Визитка</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x600/?technology,workspace') no-repeat center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: -60px;
+      position: relative;
+      z-index: 1;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: -60px;
+      border: 4px solid white;
+      object-fit: cover;
+    }
+    h1 {
+      margin: 10px 0 5px;
+    }
+    .title {
+      color: #777;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .service {
+      flex: 1 1 45%;
+      background: #eaeaea;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .contact {
+      margin-top: 30px;
+    }
+    .contact form input,
+    .contact form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact form button {
+      padding: 10px 15px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>QA Engineer – Иван Тестов</h1>
+</header>
+
+<div class="container">
+  <img src="avatar.png" class="profile-pic" alt="Profile" />
+  <h1>Иван Тестов</h1>
+  <p class="title">Тестировщик ПО / QA Engineer</p>
+  <p>Опытный специалист по ручному и автоматизированному тестированию. Помогаю делать ПО стабильным и удобным.</p>
+
+  <h2>Услуги</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Ручное тестирование</h3>
+      <p>Функциональное, регрессионное, smoke-тесты</p>
+    </div>
+    <div class="service">
+      <h3>Автотесты</h3>
+      <p>Python + Selenium / Playwright</p>
+    </div>
+    <div class="service">
+      <h3>Mobile QA</h3>
+      <p>Android / iOS тестирование</p>
+    </div>
+    <div class="service">
+      <h3>Тест-документация</h3>
+      <p>Чек-листы, баг-репорты, тест-кейсы</p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Связаться</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="4" placeholder="Сообщение"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+
+  <div class="socials">
+    <h3>Я в соцсетях</h3>
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Telegram</a>
+  </div>
+</div>
+
+</body>
+</html>
