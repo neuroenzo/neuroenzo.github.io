@@ -1,0 +1,35 @@
+    /* .avatar {
+      position: relative;
+      /* понадобится для ::after */
+    width: 140px;
+    /* размеры аватара */
+    aspect-ratio: 1;
+    /* чтобы всегда был круг */
+    }
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        /* делает само фото круглым */
+        display: block;
+        /* убирает «лишние» пиксели-отступы */
+        box-shadow: 0 0 0 3px #fff;
+        /* кольцо #1: «внешний» бордер-шэдоу */
+    }
+
+    /* Кольцо #2 через псевдоэлемент — можно задать фирменный цвет */
+    .avatar::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        /* 0 со всех сторон = поверх всей картинки */
+        border-radius: 50%;
+        border: 2px solid #1C9CEA;
+        /* ваш цвет бренда/акцента */
+        pointer-events: none;
+        /* чтобы клики не блокировались */
+    }
+
+    */

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QA Визитка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full-stack QA-инженер Станислав Урюпин</title>
   <style>
     body {
       margin: 0;
@@ -11,6 +12,7 @@
       background-color: #f4f4f4;
       color: #333;
     }
+
     header {
       background: url('https://source.unsplash.com/1600x600/?technology,workspace') no-repeat center/cover;
       height: 300px;
@@ -18,18 +20,20 @@
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
+
     .container {
       max-width: 800px;
       margin: auto;
       padding: 20px;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-top: -60px;
       position: relative;
       z-index: 1;
     }
+
     .profile-pic {
       width: 120px;
       height: 120px;
@@ -38,27 +42,33 @@
       border: 4px solid white;
       object-fit: cover;
     }
+
     h1 {
       margin: 10px 0 5px;
     }
+
     .title {
       color: #777;
     }
+
     .services {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
       margin-top: 20px;
     }
+
     .service {
       flex: 1 1 45%;
       background: #eaeaea;
       padding: 15px;
       border-radius: 10px;
     }
+
     .contact {
       margin-top: 30px;
     }
+
     .contact form input,
     .contact form textarea {
       width: 100%;
@@ -67,6 +77,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
     .contact form button {
       padding: 10px 15px;
       background: #333;
@@ -75,65 +86,125 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     .socials {
       margin-top: 20px;
     }
+
     .socials a {
       margin-right: 10px;
       text-decoration: none;
       color: #333;
     }
+
+    .socials a:hover {
+      text-decoration: underline;
+    }
+
+    .service {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .service:hover {
+      transition: box-shadow 0.2s ease;
+      box-shadow: none;
+    }
+
+    .socials img {
+      width: 26px;
+      height: 18px;
+    }
+
+    .socials p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .header h1 {
+      /* цвет текста и размер – на ваше усмотрение */
+      font-weight: 700;
+      text-align: center;
+
+      /* сама тень */
+      /*   X-смещение | Y-смещение | размытие | растяжение | цвет   */
+      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .08);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .avatar {
+      display: flex;
+      justify-content: center;
+    }
+
+    header {
+      height: 120px;
+    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>QA Engineer – Иван Тестов</h1>
-</header>
+  <header>
+    <!--<h1>Full-stack QA-инженер</h1>-->
+  </header>
 
-<div class="container">
-  <img src="avatar.png" class="profile-pic" alt="Profile" />
-  <h1>Иван Тестов</h1>
-  <p class="title">Тестировщик ПО / QA Engineer</p>
-  <p>Опытный специалист по ручному и автоматизированному тестированию. Помогаю делать ПО стабильным и удобным.</p>
+  <div class="container">
+    <div class="avatar"><img src="avatar.png" class="profile-pic" alt="Profile" /></div>
+    <h1>Станислав Урюпин</h1>
+    <!--<p class="title">Full-stack QA-инженер</p>-->
+    <p><b>Full-stack QA-инженер</b>, способный передать свой опыт, чтобы вам было проще развиваться по карьерному треку
+      в
+      тестировании</p>
+    <h2>О себе</h2>
+    <div class="about">
+      <p>Привет! Если ты зашел на эту страницу, значит уже вступил или только планируешь в изменчивый и непростой мир
+        качества программного обеспечения. Когда-то и я зайдя в мир QA, внезапно оказался в кроличьей норе, в которую
+        погружаюсь всё глубже и глубже по сей день.</p>
 
-  <h2>Услуги</h2>
-  <div class="services">
-    <div class="service">
-      <h3>Ручное тестирование</h3>
-      <p>Функциональное, регрессионное, smoke-тесты</p>
+      <p>Уже больше 8 лет. Мой обширный опыт работы, как с небольшими, так и с высоконагруженными проектами позволяет
+        заниматься не только тестированием различных направлений, но и организацией командной работы и процессов. С
+        некоторых пор обнаружил в себе потребность и возможность делиться своими знаниями и с другими теми, кто только
+        начинает или продолжает свой путь в тестировании.</p>
+
     </div>
-    <div class="service">
-      <h3>Автотесты</h3>
-      <p>Python + Selenium / Playwright</p>
+    <h2>Услуги</h2>
+    <div class="services">
+      <div class="service">
+        <h3>🧭 Менторство</h3>
+        <p>от 3000 ₽/час</p>
+      </div>
+      <div class="service">
+        <h3>🎯Подготовка к собеседованию</h3>
+        <p>от 2000 ₽/час</p>
+      </div>
+      <div class="service">
+        <h3>🎤 Проведение mock-интервью</h3>
+        <p>от 2000 ₽/час</p>
+      </div>
+      <div class="service">
+        <h3>✍️ Помощь с составлением резюме</h3>
+        <p>2000 ₽ за 1 резюме</p>
+      </div>
     </div>
-    <div class="service">
-      <h3>Mobile QA</h3>
-      <p>Android / iOS тестирование</p>
+
+    <div class="socials">
+      <h2>Связаться</h2>
+      <p>📞 <a href="tel:+79670717790">+7 (967)-071-77-90</a></p>
+      <p><img src="Telegram_logo.svg" alt="Telegram" width="32" height="32"> <a
+          href="https://t.me/vrtpoint">@vrtpoint</a></p>
     </div>
-    <div class="service">
-      <h3>Тест-документация</h3>
-      <p>Чек-листы, баг-репорты, тест-кейсы</p>
+
+    <div class="conditions">
+      <h2>Условия сотрудничества</h2>
+      <p>Любые форматы взаимодействий происходят по взаимному согласию и являются формой консультации. Оплата
+        производится с помощью переводов по номеру: <u>+79670717790</u></p>
     </div>
   </div>
-
-  <div class="contact">
-    <h2>Связаться</h2>
-    <form>
-      <input type="text" placeholder="Ваше имя" required />
-      <input type="email" placeholder="Email" required />
-      <textarea rows="4" placeholder="Сообщение"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-  </div>
-
-  <div class="socials">
-    <h3>Я в соцсетях</h3>
-    <a href="#">LinkedIn</a>
-    <a href="#">GitHub</a>
-    <a href="#">Telegram</a>
-  </div>
-</div>
 
 </body>
+
 </html>
