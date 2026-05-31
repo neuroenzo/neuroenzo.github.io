@@ -1,0 +1,8 @@
+{
+  "name": "neuroenzo.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp -r index.html style.css 1.css avatar.png Telegram_logo.svg StanislavUriupin_cv.pdf _redirects icons fonts dist/"
+  }
+}
