@@ -3,3 +3,4 @@ node_modules/
 icons/playwright_raw.svg
 icons/rest-api.png
 icons/restapi_raw.svg
+.playwright-mcp/
